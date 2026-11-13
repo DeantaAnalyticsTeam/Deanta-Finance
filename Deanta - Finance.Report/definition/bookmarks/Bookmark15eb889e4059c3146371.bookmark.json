@@ -1,0 +1,207 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/2.1.0/schema.json",
+  "displayName": "Income Statement by Month Link",
+  "name": "Bookmark15eb889e4059c3146371",
+  "options": {
+    "targetVisualNames": [],
+    "suppressData": true
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "ReportSection09326b15a1e30a45e60b",
+    "sections": {
+      "ReportSection09326b15a1e30a45e60b": {
+        "visualContainers": {
+          "cf335ca8c786d7675098": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "b9b356a9e526e1c2018b",
+                  "type": "Categorical",
+                  "expression": {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "G/L Account"
+                            }
+                          },
+                          "Hierarchy": "G/L Account Hierarchy"
+                        }
+                      },
+                      "Level": "G/L Account (Level 1)"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "91cdecd87abc6732028d",
+                  "type": "Categorical",
+                  "expression": {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "G/L Account"
+                            }
+                          },
+                          "Hierarchy": "G/L Account Hierarchy"
+                        }
+                      },
+                      "Level": "G/L Account (Level 2)"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "b8e5655544ca3002d1e4",
+                  "type": "Categorical",
+                  "expression": {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "G/L Account"
+                            }
+                          },
+                          "Hierarchy": "G/L Account Hierarchy"
+                        }
+                      },
+                      "Level": "G/L Account (Level 3)"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "cdc33fd0b0b9186a869b",
+                  "type": "Categorical",
+                  "expression": {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "G/L Account"
+                            }
+                          },
+                          "Hierarchy": "G/L Account Hierarchy"
+                        }
+                      },
+                      "Level": "G/L Account (Level 4)"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "5fe30ca1d010cd6b263e",
+                  "type": "Categorical",
+                  "expression": {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "G/L Account"
+                            }
+                          },
+                          "Hierarchy": "G/L Account Hierarchy"
+                        }
+                      },
+                      "Level": "G/L Account (Level 5)"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "7d13f80613b50773ee59",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Date"
+                        }
+                      },
+                      "Property": "Year Month"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "8102566ce14d1ada3b21",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "G/L Entries"
+                        }
+                      },
+                      "Property": "Net Change (000's)"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "pivotTable",
+              "objects": {},
+              "activeProjections": {
+                "Rows": [
+                  {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "G/L Account"
+                            }
+                          },
+                          "Hierarchy": "G/L Account Hierarchy"
+                        }
+                      },
+                      "Level": "G/L Account (Level 1)"
+                    }
+                  }
+                ],
+                "Columns": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Date"
+                        }
+                      },
+                      "Property": "Year Month"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

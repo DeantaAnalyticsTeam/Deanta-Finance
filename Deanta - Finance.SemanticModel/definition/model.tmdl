@@ -1,0 +1,110 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	discourageImplicitMeasures
+	sourceQueryCulture: en-AU
+	dataAccessOptions
+		fastCombine
+		legacyRedirects
+		returnErrorValuesAsNull
+
+queryGroup 'Parameters and Functions'
+
+	annotation PBI_QueryGroupOrder = 0
+
+queryGroup 'Dimension Tables'
+
+	annotation PBI_QueryGroupOrder = 1
+
+queryGroup 'Fact Tables'
+
+	annotation PBI_QueryGroupOrder = 2
+
+queryGroup 'Parameters and Functions\Functions'
+
+	annotation PBI_QueryGroupOrder = 3
+
+queryGroup Measures
+
+	annotation PBI_QueryGroupOrder = 7
+
+queryGroup 'Date Table'
+
+	annotation PBI_QueryGroupOrder = 8
+
+queryGroup 'Parameters and Functions\Connection Parameters'
+
+	annotation PBI_QueryGroupOrder = 4
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBI_QueryOrder = ["Balance Sheet G/L Entries","Income Statement G/L Entries","Close Income Statement G/L Entries","bc_g/l_entries","bc_g/l_budget_entries","ENVIRONMENT","COMPANY","bc_dimensions","bc_dimensionset_blank","bc_dimensionsets_datasource","GetDimCode","GetDimCodeCaption","GetDimNameCaption","GetParentGLAccountNo","bc_balance_sheet_measures","bc_GLAccountPosting","bc_GLAccountEndTotal","bc_G/L Account","bc_G/L Account Category","bc_Dimension Sets","bc_G/L Budget","bc_income _statement_measures","bc_activity_kpis","bc_liquidity_kpis","bc_profitability_kpis","bc_date_table_setup","bc_working_days","bc_standard_calendar_time_intelligence","bc_fiscal_calendar_time_intelligence","bc_weekly_calendar_time_intelligence","bc_customer_ledger_entries","bc_vendor_ledger_entries","bc_vendors","bc_customers","bc_Power BI Account Categories","API_ENDPOINT","CheckUpgradeQuery","Close Income Statement Codes","ConvertUTC","Build Closing Entry Filter","bc_closing_entry_filter_table","bc_back_links"]
+
+annotation __BNorm = 1
+
+annotation __TEdtr = 1
+
+annotation PBI_ProTooling = ["DevMode"]
+
+annotation TranslationsBuilder = Version:2.2-Updated:2025-05-05
+
+ref table 'bc_G/L Account Category'
+ref table 'bc_G/L Budget'
+ref table bc_balance_sheet_measures
+ref table 'bc_income _statement_measures'
+ref table 'bc_G/L Account'
+ref table bc_activity_kpis
+ref table bc_liquidity_kpis
+ref table bc_profitability_kpis
+ref table bc_g/l_budget_entries
+ref table 'bc_Dimension Sets'
+ref table bc_g/l_entries
+ref table bc_date_table_setup
+ref table 'Date Ref'
+ref table bc_working_days
+ref table bc_standard_calendar_time_intelligence
+ref table bc_fiscal_calendar_time_intelligence
+ref table bc_weekly_calendar_time_intelligence
+ref table bc_customer_ledger_entries
+ref table bc_vendor_ledger_entries
+ref table bc_vendors
+ref table 'Calc. Group - Time Intelligence for Calendar (Standard)'
+ref table bc_aging_date_parameter
+ref table bc_aging_bucket_period
+ref table bc_customers
+ref table 'Calc. Group - Time Intelligence for Calendar (Fiscal)'
+ref table 'Calc. Group - Time Intelligence for Calenday (Weekly)'
+ref table bc_date
+ref table 'Localized Labels'
+ref table COMPANY
+ref table 'bc_Power BI Account Categories'
+ref table bc_closing_entry_filter_table
+ref table ENVIRONMENT
+ref table bc_back_links
+ref table 'Translated Localized Labels'
+
+ref cultureInfo en-US
+ref cultureInfo es-ES
+ref cultureInfo de-DE
+ref cultureInfo fr-FR
+ref cultureInfo cs-CZ
+ref cultureInfo da-DK
+ref cultureInfo de-AT
+ref cultureInfo de-CH
+ref cultureInfo en-AU
+ref cultureInfo en-CA
+ref cultureInfo en-GB
+ref cultureInfo en-NZ
+ref cultureInfo es-MX
+ref cultureInfo fi-FI
+ref cultureInfo fr-BE
+ref cultureInfo fr-CA
+ref cultureInfo fr-CH
+ref cultureInfo is-IS
+ref cultureInfo it-CH
+ref cultureInfo it-IT
+ref cultureInfo nb-NO
+ref cultureInfo nl-BE
+ref cultureInfo nl-NL
+ref cultureInfo sv-SE
+
